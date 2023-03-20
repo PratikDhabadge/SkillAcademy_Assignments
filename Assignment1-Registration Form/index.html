@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <form class="form">
+        <div class="info">
+            <h1>Registration Form</h1>
+            <p style="padding: 15px 0">Enter your details below</p>
+            <ul>
+                <li><input type="email" placeholder="User email"/> </li>
+                <li><input type="password" placeholder="Password"/></li>
+            </ul>
+            <p id="pass-validation">!Type a complex password with 8-20 characters</p>
+            <ul>
+                <li><input type="number" placeholder="+91 Phone Number"/></li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="profession">
+            <h3 id="profession-tab"><em>Enter your profession</em></h3>
+            <ul>
+                <li>
+                    <input type="radio" > Student </input>
+                    <input type="radio"> Teacher </input>
+                    <input type="radio"> Developer </input>
+                </li>
+            </ul>
+            <label >Choose the stage if you are (student)</label>
+            <select id="rou">
+            <option value="first-pri">first primary</option>
+            </select>
+        </div>
+        <hr/>
+
+        <div class="birth">
+            <ul>
+                <li>Enter Your Birth Date.  <input type="date" /></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="other">
+            <ul>
+                <li><input type="text" placeholder="Any notes"/>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <button id="submit">Submit</button>
+        <button id="reset">Reset</button>
+    </form>
+
+</body>
+</html>
