@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+    
+}
+.main{
+    width: 500px;;
+    height: 500px;
+    margin: 100px auto;
+    background: radial-gradient(circle at 30% , #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    padding: 20px;
+    border-radius: 100px;
+}
+.outer-sqr{
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at 30% , #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    margin: 0px auto;
+    margin-top: 2px;
+    border-radius: 90px;
+    border: 50px solid rgb(255, 255, 255)
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 20px solid #fff;
+    border-radius: 80px;
+    position: relative;
+    top: 110px;
+    left: 0;
+    margin: auto;
+}
+.dot{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    /* border: 5px solid rgb(255, 255, 255); */
+    border-radius: 50px;
+    position: absolute;
+    top: 200px;
+    right: 27%;
+}
