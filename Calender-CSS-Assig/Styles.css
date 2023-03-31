@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 211, 205);
+}
+body{
+    font-family: Helvetica, sans-serif;
+
+}
+#statement{
+    margin: 30px;
+}
+#terms{
+    color:red;
+    margin: 30px;
+    font-weight: 600;
+}
+.container{
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 55%;
+}
+.container h1{
+    margin: 30px 0;
+    font-weight: 800;
+}
+.page{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    border:  1px solid black;
+    box-shadow: 10px 10px 20px black;
+    
+}
+.page p{
+    padding: 20px 10px;
+    font-size: 20px;
+    background-color: bisque;
+    cursor: pointer;
+}
+.page #day{
+    background-color: rgb(132, 127, 127);
+    color: white;
+    grid-gap: 0;
+}
+#item1{
+    grid-column-start: 4;
+    
+}
+.anim{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: red;
+    color: aliceblue;
+    border: 1px solid black;
+}
+.anim p{
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.anim #change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto auto;
+    height: 10px;
+}
+.anim #change::after{
+    background-color: green;
+    animation: para 5s ;
+    content: 'Lifestyle';
+    z-index: 10;
+}
+@keyframes para {
+    0%{
+        background-color: green;
+    }
+    50% {
+        background-color: aqua;
+        content: 'Work';
+    }
+    100% {
+        background-color: orange;
+        content: "Everything"
+    }
+}
