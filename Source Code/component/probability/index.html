@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css" />
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-text">
+            <img id="logo" src="../../assets/Dino.png" alt="logo" />
+            <h2>DinoQuiz</h2>
+        </div>
+
+        <div class="trynow">
+            <a href="/index.html">
+                <p>Home</p>
+            </a>
+            <div class="dropdown">
+                <p>Category</p>
+                <div class="dropdown-content">
+                    <a href="../pipesCisterns/index.html"><p>Pipes & Cisterns</p></a>
+                    <a href="../problemOnAges/index.html" target="_blank"><p>Problems On Ages</p></a>
+                    <a href="../profitLoss/index.html" target="_blank"><p>Profit and Loss</p></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sub-content" class="sub-container">
+        <ul id="instruction" class="instructions">
+            <li>There will be no backward button during the test</li>
+            <li>You have to attempt all the questions compulsory </li>
+            <li>You will have 1:40 min to finish the test</li>
+            <li>Selected answer can not be undo</li>
+            <li>If you are unable to click the start button, Please reload the page</li>
+            <p><i>Best of Luck....</i></p>
+        </ul>
+        <header id="question-container" class="hide">
+            <div class="timer-score">
+                <p id="timer"></p>
+                <p id="quesnumber" class=""></p>
+                <p id="score">/10</p>
+            </div>
+            <hr/>
+            
+            <div id="question">Question</div>
+            <div id="ans-btns" class="btn-grid">
+                <button id="b-button" class="btn ">Answer 1</button>
+                <button class="btn ">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </header>
+        <div class="controls">
+            <button id="start-btn" class="start-btn button" >Start</button>
+            <button id="next-btn" class="next-btn button hide">Next</button>
+            <button id="submit-btn" class="submit-btn button hide">Submit</button>
+        </div>
+    </div>
+
+    <div id="results" class="sub-container hide">
+        <div class="result-container" >
+            <h2>Your Result</h2><hr/>
+            <i><p id="username">XYZ</p></i>
+            <p id="time">Time Taken : 01:30 min</p>
+            <p id="total-question">Total Ques : 10</p>
+            <p id="attempt">Attempted Ques : 10</p>
+            <p id="correct-Que">Correct Que : </p>
+            <p id="wrong-Que">Wrong Ques : </p>
+            <p id="percentage">Percentage : </p>
+        </div>
+        
+        <a href="/" ><button id="start-again" class=" start-again-btn" >Start Again</button></a>
+    </div>
+
+    <script src="../sub-script.js" type="module"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

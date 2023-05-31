@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-text">
+            <img id="logo" src="assets/Dino.png" alt="logo" />
+            <h2>DinoQuiz</h2>
+        </div>
+
+        <div class="trynow">
+            <button id="trynow-btn" >Try Now</button>
+            <img id="menu" src="assets/menu.png" />
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Welcome Aboard!</h1>
+            <p><i>Please enter your name to take a Quiz</i></p>
+
+            <div class="input-field">
+                <input id="name" class="name" type="text" required placeholder="Enter your name" />
+                <button id="enter-btn">Enter</button>
+            </div>
+            <p>You will have 10 seconds for each question</p>
+
+        </header>
+        <hr />
+        <section>
+            <h2>Pick a Category</h2>
+            <div id="btn">
+                <button id="item-1">Pipes & Cisterns</button>
+                <button id="item-2">Probability</button>
+                <button id="item-3" >Problems On Ages</button>
+                <button id="item-4" >Profit & Loss</button>
+            </div>
+        </section>
+    </div>
+    <p id="cr-msg">&copy; Powered by PratikDhabadge</p>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
